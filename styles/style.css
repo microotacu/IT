@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+*{
+	margin:0;
+	padding: 0;
+}
+
+/*тело сайта*/
+
+body {
+	color:#FFFFFF; /*цвет текста*/
+	background:url(../images/z.jpg);
+	background-size: cover; /* Фон занимает всю доступную площадь */
+	width: 100%;
+	height: 100%;		
+	font-size: 1em;
+	font-family: "Segoe UI", sans-serif;
+	line-height: 100%;
+
+}
+
+/*ссылки*/
+
+a {
+	color: #9A56EF; /*цвет ссылок*/
+	text-decoration: none; /*ссылки без подчеркивания*/
+	transition: all.6s ease; /*скорость отображение ссылок*/
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+a:hover {
+	color: #582ADC; /*цвет ссылок*/
+	text-decoration: none; /*ссылки без подчеркивания*/
+	transition: all.6s ease; /*скорость отображение ссылок*/
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+a:active {
+	color: #701C1C; /*цвет ссылок*/
+}
+
+/*Текст на сайте*/
+
+::selection {background: #9A56EF; color:#F2B1F8 ; } /* цвет выделения текста*/
+::-moz-selection {background: #9A56EF; color:#F2B1F8 ; }
+::-webkit-selection {background: #9A56EF; color:#F2B1F8 ; }
+::-ms-selection {background: #9A56EF; color:#F2B1F8 ; }
+
+/*Изображения на сайте*/
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+}
+
+/*шапка и подвал*/
+
+header, footer {
+	width: 100%;
+	background: url(../images/1.jpg);
+	background-color: #6F5858;
+	min-height: 50px;
+}
+
+/*шапка*/
+
+header {
+	font-family: Comic Sans MS, sans-serif; /*Формат шрифта*/
+	font-size: 1.1em; /*размер шрифта*/
+	line-height: 45px; /*отступ сверху*/
+	text-indent: 10px; /*отступ слева*/		
+	border-bottom: 2px solid gold;
+	border-color: #DA0F0F; /*цвет бордюров*/
+}
+
+/*Навигация (меню)*/
+
+#logo {
+	color: #E77C7C; /*цвет ссылок*/
+	text-decoration: none; /*ссылки без подчеркивания*/
+	transition: all.6s ease; /*скорость отображение ссылок*/
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+#logo:hover {
+	color: #1DE47F; /*цвет ссылок*/
+	text-decoration: none; /*ссылки без подчеркивания*/
+	transition: all.6s ease; /*скорость отображение ссылок*/
+	-moz-transition: all.6s ease;
+	-webkit-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+}
+
+/*подвал*/
+
+footer {	
+	border-top: 2px solid;
+	border-color: #DA0F0F; /*цвет бордюров*/
+	margin-top: 10px;
+}
