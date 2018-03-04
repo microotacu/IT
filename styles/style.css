@@ -5,6 +5,10 @@
 	padding: 0;
 }
 
+html {
+	height: 100%;
+}
+
 /*тело сайта*/
 
 body {
@@ -100,8 +104,23 @@ header {
 
 /*подвал*/
 
-footer {	
+footer {
+	text-align: center;
 	border-top: 2px solid;
 	border-color: #DA0F0F; /*цвет бордюров*/
 	margin-top: 10px;
+}
+
+#page-wrap:after {
+	content: "";
+	display: block;
+}
+
+footer, page-wrap:after {
+	height: 10px;
+}
+
+#page-wrap {
+	min-height: 94%;
+	margin-bottom: -1.5px ;
 }

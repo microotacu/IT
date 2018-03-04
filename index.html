@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+<head>	
 	<meta http-equiv="Content-Type"  content="text/html; charset=utf-8"/>
 	<meta name="keywords" content="IT site"	/>
 	<meta name="description" content="Этот сайт поможет вам разобраться с проблемами Windows">
@@ -13,20 +13,23 @@
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
-	
+	<div id="page-wrap">
     <script>
     	$(document).ready (function () {
     		NProgress.start();
     	});	
 
-    	
+    	$(window).load (function () {
+    		NProgress.done();
+    	});	
     </script>
-
 	<header>
 		<a href="/" title="Главная" id="logo">Главная</a><span id="menu"></span>
 	</header>
 <a href=""> ghbdt</a>
-	<footer></footer>
-
+	</div>
+	<footer>
+		<br>&copy; Разработка: microaggression | Всё для людей | <a href="https://discord.gg/yduPEh9">Мой Discord</a>
+	</footer>	
 </body>
 </html>
