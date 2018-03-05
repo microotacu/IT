@@ -98,7 +98,7 @@ header {
 	-ms-transition: all.6s ease;
 }
 
-@media {
+@media (max-width: 1000px) {
 	#logo {
 	font-size: 2.5em;
 	}}
@@ -214,7 +214,7 @@ footer {
 	margin-top: 10px;
 }
 
-@media {
+@media (max-width: 1000px) {
 	footer {
 	font-size: 2em;
 	}}
