@@ -99,6 +99,12 @@ header {
 	-ms-transition: all.6s ease;
 }
 
+@media {
+	#logo {
+	font-size: 2.5em;
+	}}
+
+
 /*Контент*/
 
 #razdel {
@@ -136,6 +142,11 @@ header {
 	height: 900px;
 }
 
+@media {
+	#wrapper #articles article{
+	height: 1550px;
+	}}
+
 #wrapper #articles article img {
 	width: auto;
 	height: auto; /*высоты картинки*/
@@ -166,6 +177,11 @@ footer {
 	text-align: center;
 	margin-top: 10px;
 }
+
+@media {
+	footer {
+	font-size: 2em;
+	}}
 
 #page-wrap:after {
 	content: "";
