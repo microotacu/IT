@@ -142,7 +142,7 @@ header {
 	height: 900px;
 }
 
-@media {
+@media (max-width: 1000px) {
 	#wrapper #articles article{
 	height: 1550px;
 	}}
