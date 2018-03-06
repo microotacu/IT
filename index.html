@@ -6,14 +6,14 @@
 	<meta name="description" content="Этот сайт поможет вам разобраться с проблемами Windows">
 	<title>BIT-IT-шника</title>
 	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" href="styles/nprogress.css">
+	<link rel="stylesheet" href="styles/nprogress.css">	
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic' rel='stylesheet' type='text/css'>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="js/nprogress.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">	
 </head>
 <body>
-<div id="page-wrap">
+<div id="page-wrap">	
     <script>
     	$(document).ready (function () {
     		NProgress.start();
@@ -23,20 +23,35 @@
     		NProgress.done();
     	});	
     </script>
-	<header>
-	<nav class="nav">
-	<ul>
-	    <li class="current"><a href="index.html" title="Главная">Главная</a></li>
-	    <li><a href="#">О Нас</a></li>
-	    <li><a href="#">Портфолио</a></li>
-	    <li><a href="#">Наши Услуги</a></li>
-	    <li><a href="#">Контакты</a></li>
-	</ul>
-	</nav>		
+    <script>
+    	(function($){
+  $(function() {
+    $('.menu__icon').on('click', function() {
+      $(this).closest('.menu').toggleClass('menu_state_open');
+    });
+  });
+})(jQuery);
+    </script>
+	<header>		
+	<div class="menu">
+    <div class="menu__icon">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>  
+    <div class="menu__links">
+    	<a class="nenado"><img src="images/avatartext.png" border="0" /></a>
+		<a class="nenado"><img src="images/avatar.png" border="0" /></a>
+        <a class="menu__links-item" href="index.html" title="Главная">Главная</a>
+        <a class="menu__links-item" href="/" title="Windows">Windows</a>        
+    </div>
+	</div>
 	</header>
 	<center><div id="razdel">Анонсы статей</div></center>
 	<div id="wrapper">
-		<div id="articles">			
+		<div id="articles">		
 			<article>				
 				<a href="content/godwin.html" title="Посмотреть статью">
 				<img src="contentimg/gods-node.jpg" alt="Изображение" title="Изображение"/>

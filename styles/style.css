@@ -13,7 +13,7 @@ html {
 
 body {
 	color:#FFFFFF; /*цвет текста*/
-	background:url(../images/z.jpg);
+	background:url(../images/fon.jpg);
 	background-size: cover; /* Фон занимает всю доступную площадь */
 	width: 100%;
 	height: 100%;		
@@ -35,7 +35,7 @@ a {
 }
 
 a:hover {
-	color: #582ADC; /*цвет ссылок*/
+	color: #FFFFFF; /*цвет ссылок*/
 	text-decoration: none; /*ссылки без подчеркивания*/
 	transition: all.6s ease; /*скорость отображение ссылок*/
 	-moz-transition: all.6s ease;
@@ -69,114 +69,131 @@ header {
 	background: url(../images/1.jpg);
 	background-color: #000000;
 	min-height: 50px;
-	/**/
+	/*letter-spacing: пробелы между текстом*/
 	font-family: Comic Sans MS, sans-serif; /*Формат шрифта*/
 	font-size: 1.1em; /*размер шрифта*/
 	line-height: 45px; /*отступ сверху*/
-	text-indent: 10px; /*отступ слева*/		
+	text-indent: 10px; /*отступа первой строки блока текста*/		
 	border-bottom: 2px solid gold;
 	border-color: #999; /*цвет бордюров*/
 }
 
-/* меню */
-.nav {
-	margin-top: 0px;
-}
-.nav ul {
-	margin: 0;
-	padding: 10px;
-}
-.nav li {
-	margin: ;
-	padding: 0;
-	list-style: none;
-	display: inline-block;
-	*display:inline; /* ie7 */
-}
-.nav a {
-	padding: 3px 12px;
-	text-decoration: none;
-	color: #999;
-	line-height: 100%;
-}
-.nav a:hover {
-	color: #ffffff;
-}
-.nav .current a {
-	background: #999;
-	color: #fff;
-	border-radius: 3px;
-}
-.nav .current a:hover{
-	color: #000;
+@media screen and (max-width: 1000px) {
+	header {
+	min-height: 55px;
+	}}
+
+/* Меню */
+
+.menu {
+    text-align: left;
 }
 
-/* меню справа */
-.nav.right ul {
-	text-align: right;
+.menu__icon {
+   display: none;
+   width: 65px;
+   height: 55px;
+   position: relative;
+   cursor: pointer;
 }
- 
-/* меню по центру */
-.nav.center ul {
-	text-align: center;
+
+.menu__icon span {
+  display: block;
+  position: absolute;
+  height: 9px;
+  width: 100%;
+  background: #999;
+  border-radius: 9px;
+  margin-top: 10px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
 }
+
+.menu__icon span:nth-child(1) {
+  top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+  top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+  top: 26px;
+ }
+ .menu__icon span:nth-child(5) {
+  top: 39px;
+ }
+
+.menu__links-item {
+    display: inline-block;
+    color: #999;
+    font-family: Comic Sans MS, sans-serif;
+    font-size: 18px;
+    line-height: 0px; /*расстояние между текстом, столбик*/
+    padding: 0 0px;
+    /*text-transform: uppercase;*/ - /*капсом текст*/
+    text-decoration: none;
+}
+
+.menu__links-item:hover {
+    text-decoration: underline;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__icon span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.menu.menu_state_open  .menu__icon span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+.menu.menu_state_open  .menu__icon span:nth-child(5) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+
+.menu.menu_state_open .menu__links {
+  display: block;  
+}
+
 @media screen and (max-width: 1000px) {
-	.nav {		
-		position: relative;
-		min-height: 40px;
-	}	
-	.nav ul {
-		width: 170px;
-		padding: 5px 0;
-		position: absolute;
-		top: 5px;
-		left: 0;
-		border: solid 1px #aaa;
-		background: #FAFAFA url(../images/icon-menu.png) no-repeat 10px 11px;
-		border-radius: 5px;
-		box-shadow: 0 1px 2px rgba(0,0,0,.3);
-	}
-	.nav li {
-		display: none; /* скрыть все <li> пункты */
-		margin: 0;
-	}
-	.nav .current {
-		display: block; /* показывать только текущие активные <li> пункты */
-	}
-	.nav a {
-		display: block;
-		padding: 5px 5px 5px 32px;
-		text-align: left;
-	}
-	.nav .current a {
-		background: none;
-		color: #666;
-	}
- 
-	/* при наведении на пункты меню */
-	.nav ul:hover {
-		background-image: none;
-	}
-	.nav ul:hover li {
-		display: block;
-		margin: 0 0 5px;
-	}
-	.nav ul:hover .current {
-		background: url(../images/icon-check.png) no-repeat 10px 7px;
-	}
- 
-	/* адаптивное меню справа */
-	.nav.right ul {
-		left: auto;
-		right: 0;
-	}
- 
-	/* адаптивное меню по центру */
-	.nav.center ul {
-		left: 50%;
-		margin-left: -90px;
-	}
- 
+  .menu__icon{
+    display: inline-block;
+  }
+  
+  .menu__links {
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-top: 75px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .menu__links-item {
+    display: block;
+    padding: 30px 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 35px;
+  }
 }
 
 /*Контент меню*/
@@ -190,9 +207,11 @@ header {
 	margin-bottom: 10px;
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
 	#razdel {
-	font-size: 2.5em;
+	font-size: 3.5em;
+	margin-top: 25px;
+	margin-bottom: 15px;
 	}}
 
 #wrapper {
@@ -210,7 +229,7 @@ header {
 #wrapper #articles article {
 	float: left;
 	width: 31.333%;
-	border: 1px solid silver;
+	border: 0px solid silver;
 	box-sizing: border-box;;
 	border-radius: 5px;
 	background-color: #fafafa;
@@ -219,21 +238,22 @@ header {
 	margin-bottom: 15px;
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
 	#wrapper #articles article {
 	width: 96%;
 	margin-right: 2%;
+	margin-bottom: 25px;
 	}}
 
 #wrapper #articles article img {
 	width: 100%;
 	height: 250px; /*высоты картинки*/
-	border-radius: 5px 5px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
 	border-bottom: 1px solid silver;	
 	margin-bottom: 10px;
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
 #wrapper #articles article img{
 width: 100%;
 height: 500px; /*высоты картинки*/
@@ -247,7 +267,7 @@ height: 500px; /*высоты картинки*/
 	color: #7D7B7B;	
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
 	#wrapper #articles article h3 {
 	font-size: 1.7em;
 	}}
@@ -260,7 +280,7 @@ height: 500px; /*высоты картинки*/
 	margin-top: 5px; /*отступ сверху*/
 }
 
-@media (max-width: 1000px){
+@media screen and (max-width: 1000px){
 	#wrapper #articles article p {
 	line-height: 1.3em;
 	font-size: 1.5em;
@@ -275,7 +295,7 @@ height: 500px; /*высоты картинки*/
 
 #wrapper #articles article a:hover {
 	padding: 5px;
-	background-color: #FFD7DD;
+	background-color: ;
 	float: left;
 	
 }
@@ -289,7 +309,7 @@ footer {
 	margin-top: 10px;
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 	footer {
 	font-size: 2em;
 	}}
