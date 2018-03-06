@@ -253,6 +253,14 @@ header {
 	margin-bottom: 10px;
 }
 
+@media (min-width: 2000px){
+	#wrapper #articles article img{
+	height: 350px;
+	width: 100%;
+	margin-right: 2%;
+	margin-bottom: 25px;
+	}}
+
 @media screen and (max-width: 1000px){
 #wrapper #articles article img{
 width: 100%;
@@ -279,6 +287,16 @@ height: 500px; /*высоты картинки*/
 	color: #7D7B7B;
 	margin-top: 5px; /*отступ сверху*/
 }
+
+@media screen and (min-width: 2000px){
+	#wrapper #articles article p {
+		height: 70px;
+		}}
+@media screen and (max-width: 1500px){
+	#wrapper #articles article p {
+		height: 180px;
+		}}
+
 
 @media screen and (max-width: 1000px){
 	#wrapper #articles article p {

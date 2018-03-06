@@ -197,10 +197,10 @@ header {
   }
 }
 
-/*Контент*/
+/*Контент в меню*/
 
 #razdel {
-	color: #7D7B7B;
+	color: #999;
 	font-family: Comic Sans MS, sans-serif;
 	font-size: 1.7em;
 	max-width: 100%;

@@ -9,35 +9,22 @@
 	<link rel="stylesheet" href="../styles/nprogress.css">
 	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic' rel='stylesheet' type='text/css'>
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="js/nprogress.js"></script>
+	<script src="../js/nprogress.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
-	<script type="text/javascript" src="../js/jquery.js"></script>
-	<script type="text/javascript" src="../js/jquery.sexy-vote.js"></script>
-	<script type="text/javascript">
-	$(document).ready(function() {
-	    $("#vote").sexyVote({maxScore:5, idElement:0});
-	});
-	</script>
-	<style type="text/css">
-	#vote{
-	    margin-left: 3px;
-	    font-size: 0.8em;
-	}
-	</style>
 </head>
 <body>
-<div id="page-wrap">
-	<script>
-    $(document).ready (function () {
-    	NProgress.start();
+<div id="page-wrap">	
+    <script>
+    	$(document).ready (function () {
+    		NProgress.start();
     	});	
 
     	$(window).load (function () {
     		NProgress.done();
-    	});	
+    	});
     </script>
-   <script>
-(function($){
+    <script>
+    	(function($){
   $(function() {
     $('.menu__icon').on('click', function() {
       $(this).closest('.menu').toggleClass('menu_state_open');
@@ -45,7 +32,7 @@
   });
 })(jQuery);
     </script>
-	<header>
+	<header>		
 	<div class="menu">
     <div class="menu__icon">
       <span></span>
@@ -53,12 +40,12 @@
       <span></span>
       <span></span>
       <span></span>
-    </div>  
+    </div>
     <div class="menu__links">
-   		<a class="nenado"><img src="../images/avatartext.png" border="0" /></a>
-		<a class="nenado"><img src="../images/avatar.png" border="0" /></a>
+    	<a class=""><img src="../images/avatartext.png">
+		<img src="../images/avatar.png"></a>
         <a class="menu__links-item" href="../index.html" title="Главная">Главная</a>
-        <a class="menu__links-item" href="/" title="Windows">Windows</a>
+        <a class="menu__links-item" href="/" title="Windows">Windows</a>        
     </div>
 	</div>
 	</header>
@@ -88,9 +75,6 @@
 Вот так. Думаю, у меня найдутся читатели, для которых эта информация окажется интересной или полезной. <br><br>
 
 <p>Статья позаимствована с сайта <a href="https://remontka.pro/god-mode-windows-10/" target="_blank">remontka.pro</a>, надеюсь они не против :D</p>
-<p>Оцени статью:</p>
-    <p id="vote"></p>
-    <span id="rez"></span> 
 			</article>
 		</div>
 	</div>
