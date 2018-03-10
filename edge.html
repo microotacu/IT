@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <title>BIT-IT-шника</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><i class="fa fa-bold"></i>IT-IT-шникa</i></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="menu/windows.html">Windows</a></li>
+                    <li><a href="menu/browser.html">Браузеры</a></li>
+                    <li><a href="menu/programs.html">Программы</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal" href=""><i class="fa fa-envelope-o"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                <h1><b>Ярлык Edge</b></h1>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container wp">
+        <div class="row centered">
+            <br>
+            <br>
+            <div class="col-lg-8 col-lg-offset-2">
+                <p align="justify">Первый способ: простое создание ярлыка, все что требуется — знать, какое расположение объекта указать для браузера Edge.</p><br>
+                <p align="justify">Кликаем правой кнопкой мыши в любом свободном месте рабочего стола, в контекстном меню выбираем «Создать» — «Ярлык». Откроется стандартный мастер создания ярлыков.</p><br>
+                <p align="justify">В поле «расположение объекта» укажите значение со следующей строки:</p><br>
+                <p align="justify">%windir%\explorer.exe shell:Appsfolder\Microsoft.<br>MicrosoftEdge_8wekyb3d8bbwe!<br>MicrosoftEdge</p>
+                <img src="https://remontka.pro/images/edge-shortcut-object.png" width="450" height="345">
+                <p align="justify">И нажмите «Далее». В следующем окне впишите подпись для ярлыка, например, Edge. Готово.</p><br>
+                <img src="https://remontka.pro/images/set-desktop-shortcut-name-windows-10.png" width="450" height="345">
+                <p align="justify">Ярлык будет создан и будет запускать браузер Microsoft Edge, однако его значок будет отличаться от требуемого. Чтобы изменить его, кликните по ярлыку правой кнопкой мыши и выберите пункт «Свойства», а затем нажмите кнопку «Сменить значок».</p><br>
+                <p align="justify">В поле «Искать значки в следующем файле» введите значение следующей строки:</p><br>
+                <p align="justify">%windir%\SystemApps\<br>Microsoft.MicrosoftEdge_8wekyb3d8bbwe\<br>MicrosoftEdge.exe</p><br>
+                <p align="justify">И нажмите Enter. В результате вы сможете выбрать оригинальную иконку Microsoft Edge для созданного ярлыка.</p><br>
+                <img src="https://remontka.pro/images/change-edge-shortcut-icon.png" width="350" height="394">
+                <p align="justify">Примечание: указанный выше файл MicrosoftEdge.exe при обычном запуске из папки не открывает браузер, можете не экспериментировать.</p><br>
+                <p align="justify">Есть и еще один способ создания ярлыка Edge на рабочем столе или где-то еще: в качестве расположения объекта используйте %windir%\explorer.exe microsoft-edge:адрес_сайта где адрес_сайта — та страница, которую должен открыть браузер (если адрес сайта оставить пустым, то Microsoft Edge не запустится).</p><br>
+                <img src="https://remontka.pro/images/edge-shortcut-for-url.png" width="450" height="345">
+                <p>Статья позаимствована с сайта <a href="https://remontka.pro/god-mode-windows-10/" target="_blank">remontka.pro</a>, надеюсь они не против :D</p>
+            </div>            
+        </div>
+        <br>
+        <br>
+    </div>    
+    <div id="f">
+        <div class="container">
+            <div class="row centered">
+                <p>&copy; Разработка: microaggression | Всё для людей </p>
+                <a href="#"><i class="fa fa-vk"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-tumblr"></i></a>
+
+                <a href="#"><img src="assets/img/discord.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>

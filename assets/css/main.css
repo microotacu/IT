@@ -79,10 +79,10 @@ hr {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #555;
+	background: #555; /*цвет меню "Главная"*/
 }
 .navbar-inverse .navbar-nav > .active > a:hover {
-	background: #444;
+	background: #444; /*цвет меню "Главная" при нажатии*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -242,3 +242,37 @@ background-color: #999;
 #f img:hover {
 	background-color: white;
 }
+
+/* Контент из других вкладок */
+
+.wp {
+	padding-top: 5px;
+}
+
+.wp h4 {
+	font-size: 25px;
+	color: #444;
+}
+
+.wp img {
+
+	margin-bottom: 20px;	
+}
+
+.wp p{
+	font-size: 20px;
+}
+
+.wp a {
+	color: #7E5ED0;
+}
+
+.wp a:hover {
+	color: #BD435D;
+}
+
+@media screen and (max-width: 500px) {
+	.wp img {
+		width: 350px;
+		height: 268px;
+	}}
