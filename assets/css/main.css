@@ -273,6 +273,12 @@ background-color: #999;
 
 @media screen and (max-width: 500px) {
 	.wp img {
-		width: 350px;
-		height: 268px;
+		width: 320px;
+		height: 245px;
+	}}
+
+@media screen and (max-width: 350px) {
+	.wp img {
+		width: 300px;
+		height: 230px;
 	}}
