@@ -1,83 +1,101 @@
 <!DOCTYPE html>
-<html>
-<head>	
-	<meta http-equiv="Content-Type"  content="text/html; charset=utf-8"/>
-	<meta name="keywords" content="IT site"	/>
-	<meta name="description" content="Этот сайт поможет вам разобраться с проблемами Windows">
-	<title>BIT-IT-шника</title>
-	<link rel="stylesheet" type="text/css" href="styles/style.css">
-	<link rel="stylesheet" href="styles/nprogress.css">	
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic' rel='stylesheet' type='text/css'>
-	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-	<script src="js/nprogress.js"></script>
-	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">	
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+
+    <title>BIT-IT-шника</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
-<div id="page-wrap">	
-    <script>
-    	$(document).ready (function () {
-    		NProgress.start();
-    	});	
-
-    	$(window).load (function () {
-    		NProgress.done();
-    	});	
-    </script>
-    <script>
-    	(function($){
-  $(function() {
-    $('.menu__icon').on('click', function() {
-      $(this).closest('.menu').toggleClass('menu_state_open');
-    });
-  });
-})(jQuery);
-    </script>
-	<header>		
-	<div class="menu">
-    <div class="menu__icon">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>  
-    <div class="menu__links">
-    	<a class=""><img src="images/avatartext.png">
-		<img src="images/avatar.png"></a>
-        <a class="menu__links-item" href="index.html" title="Главная">Главная</a>
-        <a class="menu__links-item" href="/" title="Windows">Windows</a>        
-    </div>
-	</div>
-	</header>
-	<center><div id="razdel">Анонсы статей</div></center>
-	<div id="wrapper">
-		<div id="articles">		
-			<article>				
-				<a href="content/godwin.html" title="Посмотреть статью">
-				<img src="contentimg/gods-node.jpg" alt="Изображение" title="Изображение"/>
-				<h3>Режим бога Windows</h3>
-				<p>God Mode или режим бога в Windows 10 — своеобразная «секретная папка» в системе (присутствует и в предыдущих версиях ОС), в которой собраны все имеющиеся функции настройки и администрирования компьютера в удобном виде (а таких элементов в Windows 10 — 233 штуки).</p>
-				</a>
-			</article>			
-			<article>
-				<a href="#" title="Посмотреть статью">
-				<img src="contentimg/microsoft-edge.jpg" alt="Изображение" title="Изображение"/>
-				<h3>Ярлык Edge</h3>
-				<p>В этой простой инструкции о том, как создать ярлык браузера Edge на рабочий стол Windows 10 или для его размещения в любом другом расположении. При этом для этого можно использовать даже не один, а несколько способов.</p>
-				</a>
-			</article>
-			<article>
-				<a href="#" title="Посмотреть статью">
-				<img src="contentimg/oblachnyje_servisy.jpg" alt="Изображение" title="Изображение"/>
-				<h3>Облачные хранилища</h3>
-				<p>Если вам  надоело бегать между работой и домом с флешкой, носить постоянно ноутбук  с нужными файлами, и вы хотите, чтобы ваши важные файлы были доступны вам или вашей команде на любом компьютере или мобильном устройстве, то вам на помощь могут прийти облачные хранилища данных.</p>
-				</a>
-			</article>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				    <span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+            		<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><i class="fa fa-bold"></i>IT-IT-шникa</i></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Главная</a></li>
+                    <li><a href="#">Windows</a></li>
+                    <li><a href="#">Браузеры</a></li>
+                    <li><a href="#">Программы</a></li>
+                    <li><a data-toggle="modal" data-target="#myModal" href=""><i class="fa fa-envelope-o"></i></a></li>
+                </ul>
+			</div>
 		</div>
-	</div>
-</div>
-	<footer>
-		<br>&copy; Разработка: microaggression | Всё для людей | <a href="https://discord.gg/yduPEh9">Мой Discord</a>
-	</footer>
+	</div>    
+    <div id="headerwrap">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                <h1><b>Привет IT-шник</b></h1>
+                <h2>Анонсы статей</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container w">
+        <div class="row centered">
+            <br><br>
+            <div class="col-lg-4">
+                <div class="tilt"><img src="assets/img/content/gods-node.jpg" alt="Изображение" title="Изображение"/>
+                <h4>Режим бога Windows</h4></div>
+                <p>God Mode или режим бога в Windows 10 — своеобразная «секретная папка» в системе (присутствует и в предыдущих версиях ОС), в которой собраны все имеющиеся функции настройки и администрирования компьютера в удобном виде (а таких элементов в Windows 10 — 233 штуки).</p>                
+            </div>
+
+            <div class="col-lg-4">
+                <div class="tilt"><img src="assets/img/content/microsoft-edge.jpg" alt="Изображение" title="Изображение"/>
+                <h4>Ярлык Edge</h4></div>
+                <p>В этой простой инструкции о том, как создать ярлык браузера Edge на рабочий стол Windows 10 или для его размещения в любом другом расположении. При этом для этого можно использовать даже не один, а несколько способов.</p>
+            </div>
+
+            <div class="col-lg-4">
+                <a href="">
+                <div class="tilt"><img src="assets/img/content/oblachnyje_servisy.jpg" alt="Изображение" title="Изображение"/>          
+                </a> 
+                <h4>Облачные хранилища</h4></div>
+                <p>Если вам  надоело бегать между работой и домом с флешкой, носить постоянно ноутбук  с нужными файлами, и вы хотите, чтобы ваши важные файлы были доступны вам или вашей команде на любом компьютере или мобильном устройстве, то вам на помощь могут прийти облачные хранилища данных.</p>           
+            </div>
+        </div>
+        <br>
+        <br>
+    </div>
+    <div id="podval">
+        <div class="container">
+            <div class="row centered">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <h4>Немного информации о том куда ты попал</h4>
+                    <p>Этот ресус поможет тебе лучше познать как устроена твоя забагованная Windows и решить возникшие с ней проблемы. Также узнаешь о различных новостях и фичах которые творятся на данный момент в мире IT.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="f">
+        <div class="container">
+            <div class="row centered">
+                <p>&copy; Разработка: microaggression | Всё для людей </p>
+                <a href="#"><i class="fa fa-vk"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+                <a href="#"><i class="fa fa-tumblr"></i></a>
+
+                <a href="#"><img src="assets/img/discord.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
