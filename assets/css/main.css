@@ -14,7 +14,6 @@ body {
     margin-top: 70px;
 }
 
-
 /* Заголовки */
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
@@ -79,10 +78,27 @@ hr {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #555; /*цвет меню "Главная"*/
+	background: #BD435D; /*цвет меню "Главная"*/
 }
 .navbar-inverse .navbar-nav > .active > a:hover {
-	background: #444; /*цвет меню "Главная" при нажатии*/
+	background: #444; /*цвет меню "Главная" при наведении*/
+}
+
+.navbar-inverse .navbar-nav > .activeraznoemenu > a {
+	color: white;
+	background: #BD435D; /*цвет меню "Разное"*/
+}
+.navbar-inverse .navbar-nav > .activeraznoemenu > a:hover {
+	background: #BD435D; /*цвет меню "Разное" при наведении*/
+}
+
+.navbar-inverse .navbar-nav > .activeraznoe > a {
+	color: #FFFFFF;
+	background: #444; /*цвет меню "Разное" при наведении*/
+}
+
+.navbar-inverse .navbar-nav > .activeraznoe > a:hover {
+	background: #444; /*цвет меню "Разное" при наведении*/
 }
 
 .navbar-inverse .navbar-brand {
@@ -101,6 +117,41 @@ hr {
 	font-size: 22px;
 	letter-spacing: 2px;
 }
+
+
+#activeclick li ul {
+	position: absolute;
+	display: none;
+}
+
+#activeclick li > ul li {
+	border: 2px solid #444;
+	/*box-shadow: 0 0 5px #fff; /*Тени вокруг блочного элемента 0 0 5px 2px - яркая тень*/
+}
+
+#activeclick li > ul li a {
+	min-width: 97px;
+	color: #7b7b7b;
+	padding: 10px;
+	text-transform: none;
+	background: #2d2d2d; /*фон вкладок*/
+}
+
+#activeclick li > ul li a:hover {
+	color: white;
+
+}
+
+#activeclick li:hover > ul {
+	display: block;
+}
+
+@media screen and (max-width: 767px) {
+#activeclick li > ul li {
+	margin-left: 50px;
+	}}
+
+
 
 /*Тело сайта*/
 
@@ -166,10 +217,10 @@ hr {
 	color: #444;
 }
 
-.w img:hover {
-padding: 5px;
+/*.w img:hover {
+padding: 5px;		граница на картинки при наведение
 background-color: #999;
-}
+}*/
 
 /* Движение картинок */
 
@@ -230,6 +281,7 @@ background-color: #999;
 	color: #999;
 }
 
+
 #f img {
 	width: 35px;
 	height: 35px;
@@ -255,8 +307,12 @@ background-color: #999;
 }
 
 .wp img {
-
 	margin-bottom: 20px;	
+}
+
+.wp .imgmini {
+	width: 200px;
+	height: 200px;
 }
 
 .wp p{
@@ -271,6 +327,21 @@ background-color: #999;
 	color: #BD435D;
 }
 
+.wp h3 {
+	font-size: 25px;
+	text-align: left;
+	color: black;
+}
+
+.wp li {
+	font-size: 20px;
+}	
+
+@media screen and (max-width: 500px) {
+	#headerwrap h1 {
+		font-size: 50px;
+	}}
+
 @media screen and (max-width: 500px) {
 	.wp img {
 		width: 320px;
@@ -282,3 +353,15 @@ background-color: #999;
 		width: 300px;
 		height: 230px;
 	}}
+
+/*Модельные окна*/
+
+.modal-header h3 {
+	color: black;
+	font-size: 35px;
+	text-align: center;
+}
+
+.modal-body p{
+	font-size: 30px;
+}
