@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://microotacu.github.io/IT/</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/index.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/menu/windows.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/menu/browser.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/menu/programs.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/menu/coding.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/menu/webservices.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/godwin.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/edge.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://microotacu.github.io/IT/cloud.html</loc>
+  <lastmod>2018-03-21T19:11:22+00:00</lastmod>
+  <changefreq>daily</changefreq>
+  <priority>0.80</priority>
+</url>
+
+
+</urlset>
