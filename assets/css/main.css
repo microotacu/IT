@@ -148,7 +148,7 @@ hr {
 
 @media screen and (max-width: 767px) {
 #activeclick li > ul li {
-	margin-left: 50px;
+	margin-left: 15px;
 	}}
 
 
@@ -365,3 +365,14 @@ background-color: #999;
 .modal-body p{
 	font-size: 30px;
 }
+
+@media screen and (max-width: 500px) {
+	.modal-body p {
+		font-size: 25px;
+	}}
+
+@media screen and (max-width: 767px) {
+	.mail {
+		width: 5px;
+		float: right;
+	}}
